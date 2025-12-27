@@ -1,0 +1,215 @@
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vs MODZzZ⚡ KEY GENERATOR</title>
+
+<style>
+body{
+    margin:0;padding:0;font-family:'Courier New', monospace;
+    background:#0a0a0a;display:flex;justify-content:center;align-items:center;
+    height:100vh;color:white;
+}
+.container{
+    width:90%;max-width:400px;background:rgba(0,0,0,0.8);
+    border:2px solid #00f0ff;border-radius:15px;padding:25px;
+    box-shadow:0 0 30px #00f0ff33;text-align:center;
+}
+
+/* --- LOGO ANIMATION START --- */
+.logo-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    z-index: 2;
+    object-fit: cover;
+    border: 2px solid #222;
+}
+.logo-spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #ff0000;
+    border-right: 3px solid #ff0000;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    z-index: 1;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* --- LOGO ANIMATION END --- */
+
+h1{
+    font-size:24px;color:#00f0ff;text-shadow:0 0 10px #00f0ff;
+    margin-bottom:20px;font-family:'Impact', sans-serif;
+}
+button{
+    width:100%;padding:12px;font-size:18px;font-weight:bold;
+    color:black;background:#00c8ff;border:none;border-radius:10px;
+    cursor:pointer;margin-top:15px;
+}
+#codingBox{
+    width:90%;margin:20px auto;background:#050505;border-left:4px solid #00f0ff;
+    padding:15px;border-radius:10px;text-align:left;font-size:14px;min-height:40px;
+}
+#keyBox{
+    margin-top:20px;padding:20px;font-size:24px;font-weight:bold;
+    display:none;border-radius:12px;background:#111;color:#00c8ff;
+    font-family:'Impact', sans-serif;
+}
+#copyBtn{
+    margin-top:15px;padding:10px 20px;font-size:16px;background:#0066ff;
+    color:white;font-weight:bold;border:none;border-radius:10px;display:none;
+}
+#finalMsg{margin-top:15px;font-size:16px;color:red;display:none;}
+</style>
+</head>
+
+<body>
+<div class="container">
+    
+<div class="logo-container">
+    <div class="logo-spinner"></div>
+    <img src="https://i.supaimg.com/3217eae7-a4d1-47da-981b-9e28f9b56073.jpg" alt="Logo" class="main-logo"> 
+    </div>
+
+<style>
+/* Logo Styling aur Animation */
+.logo-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: 2;
+    background: #000;
+}
+
+.logo-spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid transparent;
+    border-top: 4px solid #ff0000; /* Red color */
+    border-bottom: 4px solid #ff0000; /* Red color */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</style>
+    <h1>•  PRIME X KILLERS •     GENERATOR </h1>
+
+    <button id="genBtn" onclick="startProcess()">Generate Key</button>
+    <div id="codingBox">Click Generate Key…</div>
+
+    <div id="keyBox">
+      <div style="font-size: 14px; color: #888;">YOUR KEY</div>
+      <div id="keyValue"></div>
+    </div>
+
+    <button id="copyBtn" onclick="copyKey()">COPY KEY</button>
+    <div id="finalMsg">❌ NO KEYS LEFT</div>
+</div>
+
+<script>
+// (Aapka baki purana JavaScript logic yahan rahega...)
+const MASTER_KEYS = ["gwveh2","hhvjjh"];
+const STORAGE_AVAILABLE = "VS_MODZZZ_AVAILABLE";
+const STORAGE_USED = "VS_MODZZZ_USED";
+
+let availableKeys = JSON.parse(localStorage.getItem(STORAGE_AVAILABLE)) || [];
+let usedKeys = JSON.parse(localStorage.getItem(STORAGE_USED)) || [];
+
+MASTER_KEYS.forEach(k=>{
+  if(!availableKeys.includes(k) && !usedKeys.includes(k)){
+    availableKeys.push(k);
+  }
+});
+localStorage.setItem(STORAGE_AVAILABLE, JSON.stringify(availableKeys));
+localStorage.setItem(STORAGE_USED, JSON.stringify(usedKeys));
+
+let currentKey = "";
+
+function typeLine(text, elemId, totalTime, callback){
+    let i=0, elem=document.getElementById(elemId);
+    elem.innerHTML="";
+    let speed = totalTime / text.length;
+    let typer=setInterval(()=>{
+        elem.innerHTML += text.charAt(i++);
+        if(i>=text.length){
+            clearInterval(typer);
+            if(callback) callback();
+        }
+    },speed);
+}
+
+function startProcess(){
+    availableKeys = JSON.parse(localStorage.getItem(STORAGE_AVAILABLE)) || [];
+    if(availableKeys.length===0){
+        document.getElementById("finalMsg").style.display="block";
+        return;
+    }
+
+    let btn=document.getElementById("genBtn");
+    btn.disabled=true;
+    let timeLeft=5;
+    let btnTimer=setInterval(()=>{
+        timeLeft--;
+        btn.innerText="Wait "+timeLeft+"s…";
+        if(timeLeft<=0){
+            clearInterval(btnTimer);
+            btn.innerText="Generate Key";
+            btn.disabled=false;
+        }
+    },1000);
+
+    typeLine("Connecting to PRIME KILLERS Server... Verifying...","codingBox",2000,()=>{
+        currentKey = availableKeys.shift();
+        usedKeys.push(currentKey);
+        localStorage.setItem(STORAGE_AVAILABLE, JSON.stringify(availableKeys));
+        localStorage.setItem(STORAGE_USED, JSON.stringify(usedKeys));
+
+        document.getElementById("keyValue").innerText=currentKey;
+        document.getElementById("keyBox").style.display="block";
+        document.getElementById("copyBtn").style.display="inline-block";
+    });
+}
+
+function copyKey(){
+    navigator.clipboard.writeText(currentKey);
+    let btn=document.getElementById("copyBtn");
+    btn.innerText="COPIED ✓";
+    setTimeout(()=>btn.innerText="COPY KEY",1500);
+}
+</script>
+</body>
+</html>
